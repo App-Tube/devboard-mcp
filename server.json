@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.getdevboard/devboard",
+  "title": "devBoard",
+  "description": "Read, create and move tasks, comment, start and finish work, and track time in devBoard, a simple project tracker for small dev teams.",
+  "version": "1.0.0",
+  "websiteUrl": "https://getdevboard.app/mcp",
+  "repository": {
+    "url": "https://github.com/App-Tube/devboard-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.getdevboard.app/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <token>. Make the token in the devBoard Mac app under Settings → Developer.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
