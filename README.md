@@ -1,5 +1,7 @@
 # devBoard MCP server
 
+[![smithery badge](https://smithery.ai/badge/darko-bacic/devboard)](https://smithery.ai/servers/darko-bacic/devboard)
+
 devBoard is a simple project tracker for freelancers and small dev teams: boards, epics, releases and a timer, in an app for iPhone, Android and Mac. This is its MCP server. Connect it once and your AI assistant can read the task it is working on, open new ones, comment, move cards and track your time. It acts as you, in one workspace, with your role.
 
 - Server: `https://api.getdevboard.app/mcp` (Streamable HTTP)
@@ -85,6 +87,11 @@ A pull request that mentions an item key (APP-42) in its title, body or branch s
 ## As a plugin
 
 This repository is also an [Agent Plugins](https://agent-plugins.org) package (`plugin.json` + `mcp.json`), so plugin directories such as cursor.directory can import it. The plugin file lists the server URL only. Plugins must not carry secrets, so after installing it add your own token as an `Authorization: Bearer <token>` header in your client, as shown above.
+
+## Where it is listed
+
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/?search=app.getdevboard) as `app.getdevboard/devboard`
+- [Smithery](https://smithery.ai/servers/darko-bacic/devboard)
 
 ## About this repository
 
