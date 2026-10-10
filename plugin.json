@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "devboard",
+  "version": "1.0.0",
+  "description": "devBoard MCP server: read, create and move tasks, comment, start and finish work, and track time from your AI assistant.",
+  "author": { "name": "App Tube", "email": "hello@getdevboard.app", "url": "https://getdevboard.app" },
+  "homepage": "https://getdevboard.app/mcp",
+  "repository": "https://github.com/App-Tube/devboard-mcp",
+  "license": "MIT",
+  "keywords": ["project-management", "kanban", "tasks", "time-tracking", "mcp"]
+}

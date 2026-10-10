@@ -82,6 +82,10 @@ The same token works on a small REST API at `https://api.getdevboard.app/dev/v1`
 
 A pull request that mentions an item key (APP-42) in its title, body or branch shows on that item and can move the card when it opens, merges or closes. One webhook per repository: https://getdevboard.app/guides/link-github-pull-requests
 
+## As a plugin
+
+This repository is also an [Agent Plugins](https://agent-plugins.org) package (`plugin.json` + `mcp.json`), so plugin directories such as cursor.directory can import it. The plugin file lists the server URL only. Plugins must not carry secrets, so after installing it add your own token as an `Authorization: Bearer <token>` header in your client, as shown above.
+
 ## About this repository
 
 This repository holds the registry listing (`server.json`) and documentation for the hosted server. The server itself is part of the devBoard backend and is not open source. Questions: hello@getdevboard.app
